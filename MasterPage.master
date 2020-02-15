@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <div id="templatemo_wrapper">
+	<div id="templatemo_top">
+        <div id="templatemo_search">
+            <form action="#" method="get">
+              <input type="text" value="Enter a keyword" name="keyword" id="keyword" title="keyword" onfocus="clearText(this)" onblur="clearText(this)" class="txt_field" />
+              <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" class="sub_btn"  />
+            </form>
+        </div>
+	</div>
+	<div id="templatemo_header">
+    	<div id="site_title"><a href="#" rel="nofollow" target="_parent">Conestoga Video Game Store</a></div>
+        <div id="templatemo_menu">
+            <ul>
+                <li><a href="#" class="selected home">Home</a></li>
+                <li><a href="#" class="services">Deals</a></li>
+                <li><a href="#" class="gallery">Demos</a></li>
+                <li><a href="#" class="news">New Releases</a></li>
+                 <li><a href="#" class="news">My Account</a></li>
+                <!--<li class="last"><a href="#" class=" contact">Employees</a></li>-->
+            </ul>
+        </div> <!-- end of templatemo_menu -->
+    </div> <!-- END of header -->
+
+  <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</div> <!-- END of templatemo_wrapper -->
+
+<div id="templatemo_footer_wrapper">
+	<div id="templatemo_footer">
+    	<div class="col_4">
+        	<h4>Pages</h4>
+            <ul class="nobullet bottom_list">
+            	<li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="col_4">
+        	<h4>Contact Us</h4>
+            <ul class="nobullet bottom_list">
+            	<li><a href="#" target="_parent">Store Contact Informatio</a></li>
+                <li><a href="#" rel="nofollow" target="_parent"></a></li>
+                <li><a href="#" rel="nofollow" target="_parent">Flash Websites</a></li>
+                <li><a href="#" target="_parent">Site Feedback</a></li>
+            </ul>
+        </div>
+        
+         <div class="col_4">
+        	<h4>Help Centre</h4>
+            <ul class="nobullet bottom_list">
+            	<li><a href="#">FAQs</a></li>
+                <li><a href="#">Forums</a></li>
+            </ul>
+        </div>
+        <div class="col_4 no_margin_right">
+        	<h4>Social Media</h4>
+            <p>Check out the Conestoga Video Game Store on Facebook and Twitter. Like and Follow us to hear about exciting events, new releases, giveaways and more!</p>
+        </div>
+        <div class="clear"></div>
+        <div id="templatemo_copyright">
+		 © 2013 Conestoga Video Game Store. Trademarks belong to Marwan Abdulkareem, Sara Dutton, Brian Chaves. All Rights Reserved.
+		</div>
+    </div> <!-- END of templatemo_footer -->
+</div> <!-- END of templatemo_footer_wrapper -->
+
+</body>
+
+</html>
+
+
+
+
+
